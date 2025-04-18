@@ -1,79 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shubham Shursen Ghogare</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">🌙</button>
+  </div>
+
+  <header class="hero">
     <h1>Shubham Shursen Ghogare</h1>
-    <p>Automotive Engineer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#blog">Blog</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Automotive Engineer | Tech Enthusiast | Naturalist</p>
+    <a href="#contact" class="cta">Get in Touch</a>
   </header>
 
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Automotive engineer passionate about e-mobility, robotics, autonomous systems, and sustainable technology.</p>
+    <p>I am an automotive engineer with deep interests in robotics, control systems, and sustainable technologies. Currently pursuing my Master's at RPTU, I'm passionate about the intersection of engineering and nature, blending advanced mobility solutions with eco-conscious design.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <ul>
-      <li>Python, C++</li>
-      <li>ROS, Gazebo</li>
-      <li>MATLAB, Simulink</li>
-      <li>PyTorch</li>
-      <li>SolidWorks, Ansys</li>
-      <li>GIT, JIRA, Confluence</li>
-    </ul>
+    <div class="skills-grid">
+      <div>Python</div><div>C++</div><div>ROS</div><div>Gazebo</div>
+      <div>MATLAB</div><div>Simulink</div><div>PyTorch</div>
+      <div>SolidWorks</div><div>Ansys</div><div>GIT</div>
+    </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <p>1. Neural CBFs in ROS2 – <a href="https://github.com/Shubhg1498">GitHub</a></p>
-    <p>2. CBF Safety Filter Simulation – <a href="https://github.com/Shubhg1498/CBF-for-obstacle-avoidance">GitHub</a></p>
-    <p>3. Energy Mgmt System – MATLAB/Simulink strategy for hybrid EVs.</p>
+    <div class="projects">
+      <div class="card">
+        <h3>Neural CBFs in ROS2</h3>
+        <p>Developed neural Control Barrier Functions for motion planning.</p>
+        <a href="https://github.com/Shubhg1498">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>CBF Safety Filter</h3>
+        <p>Implemented PD+CBF framework in Python for obstacle avoidance.</p>
+        <a href="https://github.com/Shubhg1498/CBF-for-obstacle-avoidance">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Energy Management for Hybrid EVs</h3>
+        <p>Rule-based fuel-saving model using MATLAB/Simulink.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="blog">
+  <section id="blog" class="section">
     <h2>Blog</h2>
-    <p>Coming soon...</p>
+    <p>Coming soon: posts on control theory, robotics, and sustainable mobility.</p>
   </section>
 
-  <section id="hobbies">
-    <h2>Hobbies & Interests</h2>
+  <section id="hobbies" class="section">
+    <h2>Hobbies</h2>
     <ul>
-      <li>Football (Uni-Liga RPTU)</li>
-      <li>Photography – <a href="https://www.instagram.com/picture.sg.ue/">@picture.sg.ue</a></li>
-      <li>Gardening, Reading</li>
+      <li>⚽ Football (Uni-Liga 2022–2024)</li>
+      <li>📸 Photography – <a href="https://www.instagram.com/picture.sg.ue/">@picture.sg.ue</a></li>
+      <li>🌱 Gardening, 📖 Reading</li>
     </ul>
   </section>
 
-  <section id="resume">
+  <section id="resume" class="section">
     <h2>Resume</h2>
-    <p><a href="assets/Shubham_Resume.pdf" download>Download Resume (PDF)</a></p>
+    <p><a href="assets/Shubham_Resume.pdf" download>Download My Resume (PDF)</a></p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:sghogare1498@gmail.com">sghogare1498@gmail.com</a></p>
-    <p><a href="https://github.com/Shubhg1498">GitHub</a> | 
-       <a href="https://www.linkedin.com/in/shubham-ghogare-b30537136/">LinkedIn</a></p>
+    <p>
+      <a href="https://github.com/Shubhg1498">GitHub</a> |
+      <a href="https://www.linkedin.com/in/shubham-ghogare-b30537136/">LinkedIn</a>
+    </p>
   </section>
 
   <footer>
-    <p>© 2025 Shubham Shursen Ghogare</p>
+    <p>&copy; 2025 Shubham Shursen Ghogare</p>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
