@@ -2,19 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shubham Shursen Ghogare</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8" />
+  <title>Shubham Shursen Ghogare - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="assets/css/style.css" rel="stylesheet" />
 </head>
-<body>
+<body class="light-mode">
   <header>
     <h1>Shubham Shursen Ghogare</h1>
     <p>Automotive Engineer</p>
     <p>Tech enthusiast, naturalist and a firm believer of sustainable practices</p>
+    <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -26,38 +28,73 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
+    <div>
       <h3>Neural Control Barrier Functions (CBFs) in ROS2</h3>
-      <p>Developed and tested neural CBFs for safe and efficient motion planning in simulation environments. Integrated ML techniques to enhance obstacle avoidance and collision prevention strategies.</p>
-      <p><strong>Tech stack:</strong> Python, ROS2, ML</p>
-      <a href="https://github.com/Shubhg1498">GitHub</a>
+      <p>ML-enhanced safe motion planning in ROS2. Simulation for obstacle/collision avoidance.</p>
+      <p><b>Tech:</b> Python, ROS2, ML</p>
     </div>
-    <div class="project">
-      <h3>Simulation of CBFs as Safety Filter</h3>
-      <p>Created a framework using PD control and CBFs for autonomous driving in dynamic environments, ensuring safe, collision-free trajectories.</p>
-      <p><strong>Tech stack:</strong> Python, ROS, Gazebo</p>
-      <a href="https://github.com/Shubhg1498/CBF-for-obstacle-avoidance">GitHub</a>
+    <div>
+      <h3>Simulation of CBFs for Autonomous Driving</h3>
+      <p>PD controller + CBF framework for safe navigation in dynamic environments.</p>
+      <p><b>Tech:</b> Python, ROS, Gazebo</p>
     </div>
-    <div class="project">
-      <h3>Energy Management System for Hybrid EVs</h3>
-      <p>Reduced fuel consumption in hybrid vehicles using rule-based strategies implemented in MATLAB and Simulink.</p>
-      <p><strong>Tech stack:</strong> MATLAB, Simulink</p>
-      <a href="https://github.com/Shubhg1498">GitHub</a>
+    <div>
+      <h3>Energy Management in Hybrid EVs</h3>
+      <p>MATLAB/Simulink-based strategy to reduce hybrid EV fuel consumption.</p>
+      <p><b>Tech:</b> MATLAB, Simulink</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
+  <section id="blog">
+    <h2>Blog</h2>
     <ul>
-      <li><strong>Email:</strong> sghogare1498@gmail.com</li>
-      <li><a href="https://github.com/Shubhg1498">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/shubham-ghogare-b30537136/">LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/picture.sg.ue/">Instagram</a></li>
+      <li><a href="blog/cbf-learning.html">Learning Control Barrier Functions (CBFs)</a></li>
     </ul>
   </section>
 
+  
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, C++</li>
+      <li>ROS, Gazebo</li>
+      <li>MATLAB, Simulink</li>
+      <li>PyTorch</li>
+      <li>SolidWorks, Ansys</li>
+      <li>GIT, JIRA, Confluence</li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="assets/Shubham_Resume.pdf" download>Download my Resume (PDF)</a></p>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Football (Uni-Liga RPTU participant 2022–2024)</li>
+      <li>Photography – <a href="https://www.instagram.com/picture.sg.ue/">@picture.sg.ue</a></li>
+      <li>Gardening</li>
+      <li>Reading</li>
+    </ul>
+  </section>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sghogare1498@gmail.com">sghogare1498@gmail.com</a></p>
+    <p><a href="https://github.com/Shubhg1498">GitHub</a></p>
+    <p><a href="https://www.linkedin.com/in/shubham-ghogare-b30537136/">LinkedIn</a></p>
+    <p><a href="https://www.instagram.com/picture.sg.ue/">Instagram</a></p>
+  </section>
+
   <footer>
-    <p>© 2025 Shubham Shursen Ghogare</p>
+    <p>&copy; 2025 Shubham Shursen Ghogare</p>
   </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
