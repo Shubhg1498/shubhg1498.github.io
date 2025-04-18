@@ -1,55 +1,59 @@
 
 body {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: #111;
+  color: #eee;
 }
 .hero {
   background: linear-gradient(to right, #2c3e50, #3498db);
   color: white;
+  padding: 100px 20px;
   text-align: center;
-  padding: 80px 20px;
+}
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #ea750f;
+  text-decoration: none;
+  border-radius: 5px;
 }
 .section {
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  text-align: center;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
-.skill {
-  text-align: center;
-  transition: transform 0.3s ease;
+.card {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 calc(33% - 40px);
 }
-.skill:hover {
-  transform: scale(1.05);
+body.dark .card {
+  background: #222;
 }
-.skill img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 8px;
-  transition: transform 0.3s ease;
-}
-.skill:hover img {
-  transform: rotate(10deg) scale(1.2);
-}
-.bar {
-  height: 10px;
-  background: #ccc;
-  margin-top: 8px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.bar div {
-  height: 100%;
-  background: #3498db;
-  width: 0%;
-  transition: width 1.5s ease;
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 footer {
-  background: #333;
-  color: white;
   text-align: center;
   padding: 20px;
+  background: #333;
+  color: white;
 }
